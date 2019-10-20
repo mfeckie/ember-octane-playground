@@ -1,9 +1,15 @@
 <SafeImage src="https://via.placeholder.com/300.png" />
 <SafeImage src="https://example.com/foo.png" />
-<SafeImage src="https://example.com/foo.png"
-   alt="Avatar image"
-   class="avatar"
-   height="50"
-   width="50"
+<SafeImage
+  src="https://example.com/foo.png"
+  alt="Avatar image"
+  class="avatar"
+  height="50"
+  width="50"
+/>
+<Mutator
+  @plainValue={{this.plainValue}}
+  @mutableObject={{this.mutableObject}}
+  @array={{this.array}}
 />
 {{outlet}}

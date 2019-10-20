@@ -1,0 +1,13 @@
+<button {{on "click" this.tryImmutable}}>
+  Cannot mutate
+  {{@plainValue}}
+</button>
+
+<button {{on "click" this.tryMutable}}>
+  Can mutate interior ->
+  {{@mutableObject.message}}
+</button>
+
+<button {{on "click" this.pushToArray}}>
+  Push to array {{#each @array as |item|}}{{item}}, {{/each}}
+</button>
